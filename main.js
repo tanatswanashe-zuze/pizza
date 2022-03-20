@@ -5,6 +5,7 @@ function Pizza(name, size, topping) {
 
 
 };
+let pizza1 = new Pizza(magarita, small, pineapple)
 Pizza.prototype.sizes = {
     small: 10,
     medium: 15,
@@ -30,6 +31,3 @@ Pizza.prototype.price = function() {
 
 let pizzaprice = this.name + this.size;
 console.log(pizzaprice)
-
-let pizza1 = new Pizza(magarita, small, cheese)
-console.log(pizza1.pizzaprice)
