@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="/css/style.css">
+    <script src="main.js"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins|Italiana">
     <title>LA'PEZZA</title>
 </head>
@@ -16,28 +17,28 @@
         <form>
             <div class="form-row align-items-center">
                 <div class="col-auto my-1">
-                    <label class="name" for="inlineFormCustomSelect">Name</label>
+                    <label class="nameh" for="inlineFormCustomSelect">Name</label>
                     <br>
-                    <select class="selectsize" id="inlineFormCustomSelect">
+                    <select class="selectsize" id="name">
 						<option selected>Choose...</option>
-						<option value="magarita">magarita</option>
-						<option value="Neapolitan">Neapolitan</option>
-						<option value="Louis">Luis</option>
+						<option id="magarita"value="magarita">magarita</option>
+						<option id="Neapolitan" value="Neapolitan">Neapolitan</option>
+						<option id="Louis" value="Louis">Luis</option>
 					</select>
                     <div>
                         <label class="sizeh" for="inlineFormCustomSelect">Size</label>
                         <br>
-                        <select class="selectsize" id="inlineFormCustomSelect">
+                        <select class="selectsize" id="size">
 						<option selected>Choose...</option>
-						<option value="Small">Small</option>
-						<option value="Medium">Medium</option>
-						<option value="Large">Large</option>
+						<option id="small"value="Small">Small</option>
+						<option id="medium"value="Medium">Medium</option>
+						<option id="large" value="Large">Large</option>
 					</select>
                     </div>
                     <div>
-                        <label class="base" for="inlineFormCustomSelect">Base</label>
+                        <label class="baseh" for="inlineFormCustomSelect">Base</label>
                         <br>
-                        <select class="selectsize" id="inlineFormCustomSelect">
+                        <select class="selectsize" id="base">
 							<option selected>Choose...</option>
 							<option value="1">Normal</option>
 							<option value="2">Thin</option>
@@ -46,22 +47,23 @@
                     </div>
                 </div>
                 <div class="col-auto my-1">
-                    <label class="topping" for="toping">extra toppings</label>
+                    <label class="topping" for="toping">Extra Toppings</label>
                     <br>
 
-                    <div class="toppings">
+                    <div class="toppings" id="topping">
 
-                        <input type="checkbox" class="check" id="customControlAutosizing">
+                        <input type="checkbox" class="pineapple" id="pineapple">
                         <option value="pineapple">pineapple</option>
-                        <input type="checkbox" class="check" id="customControlAutosizing">
+                        <input type="checkbox" class="cheese" id="cheese">
                         <option value="cheese">cheese</option>
-                        <input type="checkbox" class="check" id="customControlAutosizing">
+                        <input type="checkbox" class="sauce" id="sauce">
                         <option value="Sauce">sauce</option>
                     </div>
                 </div>
                 <br>
+                <label for="price">Price</label>
                 <div class="col-auto my-1">
-                    <button type="submit" class="btn btn-primary">Submit</button>
+                    <button type="submit" onclick="myF" class="submited">Submit</button>
                 </div>
             </div>
         </form>
@@ -69,7 +71,7 @@
 
 
 
-    <script src="/main.js"></script>
+    <script src="main.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </body>
 
