@@ -1,16 +1,24 @@
 //pizza names//
+
+
+
+
 function myF() {
+
     function getName() {
-        PName = getElementById("Name").value
+        var PName = document.getElementById("name")
+        document.getElementById("totalp").innerHTML = PName
         if (PName = "Neapolitan")
-            PPrice = 10
+            var PPrice = 10
         else if (PName = "greek")
             PPrice = 7
         else if (PName = "magarita")
             PPrice = 5
         else if (PName = "luis")
             PPrice = 10
+
     }
+
 
     //bases//
     function getbase() {
@@ -31,34 +39,38 @@ function myF() {
     function getsize() {
         size = document.getElementById("size").value
 
-        if (size = "small")
+        if (size = "Small")
             SPrice = 8
-        else if (size = "medium")
+        else if (size = "Medium")
             SPrice = 10
-        else if (size = "large")
+        else if (size = "Large")
             Sprice = 12
     }
 
     $(document).ready(function() {
-                $(".pineapple").select(function() {
-                    tprice = 1
+            $(".pineapple").select(function() {
+                tprice = 1
 
-                });
-                $(document).ready(function() {
-                            $(".cheese").select(function() {
-                                tprice = 2
+            });
+            $(document).ready(function() {
+                    $(".cheese").select(function() {
+                        tprice = 2
+
+                    });
+                    $(document).ready(function() {
+                            $(".sauce").select(function() {
+                                tprice = 3
 
                             });
-                            $(document).ready(function() {
-                                    $(".sauce").select(function() {
-                                        tprice = 3
 
-                                    });
+                        }
 
-                                }
+                        /function calcTotal() {
 
-                                (PPrice, SPrize, BPrice) = {
-                                    Total = PPrice + SPrize + T1Price + T2Price + T3Price + BPrice
-                                    alert(Total)
-                                }
-                            };
+                        Total = PPrice + SPrize + T1Price + T2Price + T3Price + BPrice
+
+
+                    })
+            })
+    })
+}
