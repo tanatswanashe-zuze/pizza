@@ -19,18 +19,18 @@
                 <div class="col-auto my-1">
                     <label class="nameh" for="inlineFormCustomSelect">Name</label>
                     <br>
-                    <select class="selectsize" id="name">
+                    <select class="selectsize" id="name" required>
 						<option selected>Choose...</option>
 						<option id="magarita"value="magarita">magarita</option>
 						<option id="Neapolitan" value="Neapolitan">Neapolitan</option>
-						<option id="Louis" value="Louis">Luis</option>
+						<option id="luis" value="luis">Luis</option>
 					</select>
                     <div>
                         <label class="sizeh" for="inlineFormCustomSelect">Size</label>
                         <br>
-                        <select class="selectsize" id="size">
+                        <select class="selectsize" id="size" required>
 						<option selected>Choose...</option>
-						<option id="small"value="Small">Small</option>
+						<option id="small"value="Small">Small</option >
 						<option id="medium"value="Medium">Medium</option>
 						<option id="large" value="Large">Large</option>
 					</select>
@@ -38,7 +38,7 @@
                     <div>
                         <label class="baseh" for="inlineFormCustomSelect">Base</label>
                         <br>
-                        <select class="selectsize" id="base">
+                        <select class="selectsize" id="base" required>
 							<option selected>Choose...</option>
 							<option value="1">Normal</option>
 							<option value="2">Thin</option>
@@ -63,10 +63,14 @@
                 <br>
                 <label for="price">Price</label>
                 <div class="col-auto my-1">
-                    <button type="submit" onclick="myF" class="submited">Submit</button>
+                    <button type="submit" onclick="myF()">Submit</button>
                 </div>
             </div>
+
         </form>
+        <div>
+            <p id="totalp">Your Total Is:</p>
+        </div>
     </div>
 
 
